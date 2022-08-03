@@ -52,7 +52,7 @@ h2 {
     color: white;
     margin: 5px;
     font-family: 'Cinzel', serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     text-shadow: 0 0 5px blue;
 }
@@ -114,14 +114,20 @@ h2 {
 
 }
 
-@media (min-width: 600px), (max-height: 780px) {
+@media (min-width: 600px) {
     #main-container {
-        max-width: 750px; 
+        max-width: 750px;
+        height: 700px; 
+    }
+
+    #title {
+        font-size: 3rem;
     }
 
     #cards {
         flex-direction: row;
         justify-content: space-evenly;
+        gap: 0;
         
     }
 
@@ -129,19 +135,12 @@ h2 {
         order: -1;
     }
 
-}
-
-@media (min-width: 600px) {
-    #main-container {
-        height: 700px;
+    h2 {
+        font-size: 1.5rem;
     }
 
     .placeholder {
         width: 220px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
     }
 
     #new-deck,
@@ -149,11 +148,4 @@ h2 {
         font-size: 1.5rem;
     }
 
-    #cards {
-        gap: 0;
-    }
-
-    #title {
-        font-size: 3rem;
-    }
 }
